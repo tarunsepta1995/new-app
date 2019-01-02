@@ -5,8 +5,7 @@ import EmployeeMasterIdentification from '../components/EmployeeMasterIdentifica
 import EmployeeMasterOffice from '../components/EmployeeMasterOffice';
 import { Nav, NavItem, NavLink, TabContent,TabPane} from "reactstrap";
 import classnames from "classnames";
-import parsor from 'react-json-parsenpmar'
-
+import parser from 'json-schema-parser'
 export default class EmployeeMaster extends Component{
     constructor(props){
         super(props)
@@ -39,16 +38,16 @@ export default class EmployeeMaster extends Component{
              </Nav>
              <TabContent activeTab={this.state.activeTab}>
                  <TabPane className="tab-pane" tabId="1">
-                     <EmployeePersonalDetails />
+                     <EmployeePersonalDetails employeeMasterSchema = {parser.parse(this.props.EmployeeSchema).properties.EmployeeMasterPersonal} />
                  </TabPane>
                  <TabPane className="tab-pane" tabId="2">
-                     <EmployeeMasterOffice />
+                     <EmployeeMasterOffice employeeMasterSchema = {parser.parse(this.props.EmployeeSchema).properties.EmployeeOfficeDetails} />
                  </TabPane>
                  <TabPane className="tab-pane" tabId="3">
-                     <EmployeeMasterBank />
+                     <EmployeeMasterBank employeeMasterSchema = {parser.parse(this.props.EmployeeSchema).properties.EmployeeMasterBank} />
                  </TabPane>
                  <TabPane className="tab-pane" tabId="4">
-                     <EmployeeMasterIdentification />
+                     <EmployeeMasterIdentification employeeMasterSchema = {parser.parse(this.props.EmployeeSchema).properties.EmployeeIdentificationDetails} />
                  </TabPane>
              </TabContent>
          </div>

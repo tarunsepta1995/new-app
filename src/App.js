@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+
 /*import logo from './logo.svg';*/
 import './App.css';
-import CompRouter from './Routes/route'
-import EmployeeMasterNew from './components/EmployeeMasterNew'
+import EmployeeMaster from './components/EmployeeMaster'
 import {connect} from "react-redux"
+//import './CSS/company_master.css'
 
 function mapStateToProps(state){
 return{
@@ -11,4 +11,6 @@ return{
        }
 }
 
-export default connect(mapStateToProps)(EmployeeMasterNew)
+export default connect(mapStateToProps)(EmployeeMaster)
+
+

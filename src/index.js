@@ -4,10 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-import EmplMast from './components/EmployeeMasterNew';
 import {createStore} from "redux";
 import {Provider} from "react-redux";
 import EmployeeMasterReducer from "./Reducers/EmployeeMasterReducer";
+
 
 ReactDOM.render(
 <Provider store = {createStore(EmployeeMasterReducer)}>

@@ -2,26 +2,13 @@ import React,{Component} from 'react';
 import Form from 'react-jsonschema-form';
 import EmployeeMaster from '../Schema/employee_master';
 
-const UiSchema = {
-    "EmployeeMasterPersonal" :{
-        "classNames" : 'tabDisplay'
-    },
-    "EmployeeMasterBank" : {
-
-    },
-    "EmployeeIdentificationDetails" :{
-        "classNames" : 'tabDisplay'
-    },
-    "EmployeeOfficeDetails":{
-        "classNames" : 'tabDisplay'
-    }
-}
+const UiSchema = {}
 
 export default class EmployeeMasterBank extends Component{
     render() {
         return(
             <div>
-                <Form schema={EmployeeMaster} uiSchema={UiSchema}> </Form>
+                <Form schema= {this.props.employeeMasterSchema} uiSchema={UiSchema} />
                </div>
         )
     }
