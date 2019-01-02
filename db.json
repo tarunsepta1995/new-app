@@ -1,0 +1,104 @@
+{
+  "EmployeeDetails": [
+    {
+      "id": "ASC001",
+      "Title": "Mr.",
+      "EmployeeFirstName": "Tarun",
+      "EmployeeDOB": "1995-05-07",
+      "EmployeeDOC": "2019-01-01",
+      "EmployeeDOJ": "2019-01-01",
+      "EmployeeBloodGroup": "A+"
+    },
+    {
+      "EmployeeMasterPersonal": {
+        "id": "ASC002",
+        "Title": "Mr.",
+        "EmployeeFirstName": "Sunny",
+        "EmployeeMiddleName": "kumar",
+        "EmployeeLastName": "sony",
+        "EmployeeSurrName": "Sony",
+        "EmployeeNationalLanguage": "HIndi",
+        "EmployeeDOB": "2011-01-01",
+        "EmployeeDOC": "2012-01-01",
+        "EmployeeDOJ": "2019-01-01",
+        "EmployeeBloodGroup": "O+"
+      },
+      "EmployeeMasterBank": {},
+      "EmployeeIdentificationDetails": {},
+      "EmployeeOfficeDetails": {},
+      "id": "1CpXy8Y"
+    },
+    {
+      "EmployeeMasterPersonal": {
+        "id": "ASC003",
+        "Title": "Mr.",
+        "EmployeeFirstName": "Akash",
+        "EmployeeDOB": "2221-09-01",
+        "EmployeeDOC": "2018-01-01",
+        "EmployeeDOJ": "2018-01-01",
+        "EmployeeBloodGroup": "AB+"
+      },
+      "EmployeeMasterBank": {},
+      "EmployeeIdentificationDetails": {},
+      "EmployeeOfficeDetails": {},
+      "id": "8buJAAk"
+    },
+    {
+      "id": "ASas",
+      "Title": "Mr.",
+      "EmployeeFirstName": "Tarun",
+      "EmployeeMiddleName": "Septa",
+      "EmployeeDOB": "0034-02-12",
+      "EmployeeDOC": "0008-03-20",
+      "EmployeeDOJ": "0032-02-23",
+      "EmployeeBloodGroup": "A+"
+    },
+    {
+      "id": "lKH80nH"
+    },
+    {
+      "EmployeeMasterPersonal": {
+        "id": "AQWE",
+        "Title": "Mr.",
+        "EmployeeFirstName": "Tarun"
+      },
+      "EmployeeMasterBank": {
+        "AccountNumber": "sadajhdg2131746",
+        "BankCode": "DSGHfagsf",
+        "BranchCode": "djhfgsd",
+        "LocationCode": "sdjhfgs"
+      },
+      "EmployeeIdentificationDetails": {},
+      "EmployeeOfficeDetails": {},
+      "id": "13wVKVO"
+    },
+    {
+      "EmployeeMasterPersonal": {
+        "id": "213123"
+      },
+      "EmployeeMasterBank": {
+        "AccountNumber": "123123",
+        "BankCode": "123123",
+        "BranchCode": "1231231",
+        "LocationCode": "123123"
+      },
+      "EmployeeIdentificationDetails": {},
+      "EmployeeOfficeDetails": {},
+      "id": "0g-6Znn"
+    },
+    {
+      "EmployeeMasterPersonal": {
+        "id": "124734276"
+      },
+      "EmployeeMasterBank": {
+        "AccountNumber": "reywet",
+        "BankCode": "347236478",
+        "BranchCode": "2378462378",
+        "LocationCode": "23784237846"
+      },
+      "EmployeeIdentificationDetails": {},
+      "EmployeeOfficeDetails": {},
+      "id": "zvKXsa6"
+    }
+  ]
+}

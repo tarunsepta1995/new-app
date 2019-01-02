@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "organization",
+  "type": "object",
+  "properties": {
+    "basicInformation": {
+      "$ref": "#/definitions/organization_basicInformation"
+    },
+    "generalCode": {
+      "$ref": "#/definitions/organization_generalCode"
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "organization_basicInformation": {
+      "title": "basicInformation",
+      "type": "object",
+      "properties": {
+        "companyCode": {
+          "type": "string"
+        },
+        "registeredName": {
+          "type": "string"
+        },
+        "companyName": {
+          "type": "string"
+        },
+        "globalClientCode": {
+          "type": "string"
+        },
+        "corporateEmail": {
+          "type": "string",
+          "format" : "email"
+        },
+        "corporatePhoneNumber": {
+          "type": "string"
+        },
+        "industryOrCategory": {
+          "type": "string",
+          "enum": [
+            "Manufacturing",
+            "IT",
+            "Finance"
+          ]
+        },
+        "registeredAddress": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "zipCode": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "companyCode",
+        "registeredName"
+      ],
+      "additionalProperties": false,
+      "additionalItems": false
+    },
+    "organization_generalCode": {
+      "title": "generalCode",
+      "type": "object",
+      "properties": {
+        "banks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "designations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "code",
+              "description"
+            ]
+          }
+        }
+      },
+      "required": [
+        "banks"
+      ],
+      "additionalProperties": false,
+      "additionalItems": false
+    }
+  }
+}

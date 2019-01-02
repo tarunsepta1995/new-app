@@ -1,0 +1,69 @@
+
+:root{
+    --topPosition : 10%;
+}
+.col-md-12{
+    padding: 0;
+}
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position:fixed;
+    top: var(--topPosition);
+    left: 0;
+    width: 100%;
+    color: whitesmoke;
+}
+.nav li{
+    float: left;
+}
+.nav li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: "Font Awesome 5 Free";
+}
+.nav li a:hover{
+    background-color: #111;
+}
+
+.active{
+    background-color: #4CAF50;
+}
+
+#root_EmployeeMasterPersonal__title,#root_EmployeeOfficeDetails__title,#root_EmployeeMasterBank__title ,#root_EmployeeIdentificationDetails__title{
+    display: block;
+    width: 100%;
+    border: #333 solid;
+    border-radius: 15px;
+    font-family: "Font Awesome 5 Free";
+    text-align: center;
+    background-color: #333;
+    color : whitesmoke;
+}
+
+.bank{
+    margin-left: 25%;
+    margin-top: calc(var(--topPosition) - 6%);
+}
+
+.iden{
+    margin-left: 12.5%;
+    margin-top: calc(var(--topPosition) - 6%);
+}
+.submitButton{
+    position:fixed;
+    top: calc(var(--topPosition) + 1%);
+    right:8%;
+}
+.cancelButton{
+    position: fixed;
+    top : calc(var(--topPosition) + 1%);
+    right : 2%;
+}
+.errors{
+    margin-top:var(--topPosition);
+}

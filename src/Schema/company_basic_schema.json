@@ -1,0 +1,96 @@
+{
+  "definitions" : {
+        "commontype" : {
+          "type" : "string"
+        }
+  },
+  "type" : "object",
+  "properties" : {
+    "industry":{
+      "$ref" : "#/definitions/commontype",
+      "title" : "Industry / Catogory",
+      "enum" : ["A","V","S"]
+    },
+    "companyCode":{
+      "type" : "string",
+      "title" : "Generate Company Code"
+    },
+    "companyName" : {
+      "type" : "string",
+      "title" : "Company Name"
+    },
+    "RegisteredName" : {
+      "type" : "string",
+      "title" : "Registered Name"
+    },
+    "Globalclientcode" : {
+      "type" : "string",
+      "title" : "Global Client Code"
+    },
+    "country" : {
+      "type" : "string",
+      "title" : "Country/Language"
+    },
+    "CorporateEmail" : {
+      "type" : "string",
+      "title" : "Corporate Email"
+    },
+    "CorporatePhone" : {
+      "type" : "string",
+      "title" : "Corporate Phone Number"
+    },
+    "companylogo": {
+      "type" : "string",
+      "format" : "data-url",
+      "title": "upload company logo here.."
+    }
+  ,
+    "Registeredadd": {
+      "type": "string",
+      "title": "Registered Address :"
+    },
+    "Registeredadd_1": {
+      "type": "string",
+      "title": "Registered Address :"
+    },
+    "city": {
+      "type": "string",
+      "enum": [
+        "Bangalore",
+        "Jaipur",
+        "Pune"
+      ],
+      "title": "City :"
+    },
+    "Zip": {
+      "type": "string",
+      "enum": [
+        "1101",
+        "1123",
+        "1212"
+      ],
+      "title": "Zip/ Pin Code :"
+    },
+    "OfficialEmail": {
+      "type": "string",
+      "title": "Office Email :"
+    },
+    "OfficeTel": {
+      "type": "string",
+      "title": "Office telephone :"
+    },
+    "RegisteredAddress" : {
+      "type": "array",
+      "title": "Add New Address",
+      "items": {
+        "type" : "object",
+        "properties": {
+          "Address" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  },
+  "required": ["industry", "companyCode","companyName","RegisteredName","CorporateEmail","CorporatePhone"]
+}

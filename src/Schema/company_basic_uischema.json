@@ -1,0 +1,58 @@
+{
+  "classNames": "container",
+  "ui:order": ["industry", "companyCode","companylogo","companyName",
+    "RegisteredName","Globalclientcode","country","CorporateEmail",
+    "CorporatePhone","Registeredadd","Registeredadd_1","city",
+    "Zip","OfficialEmail","OfficeTel","RegisteredAddress"
+  ],
+  "industry":{
+    "classNames": "m-2 float-left col-4"
+  },
+  "companyCode":{
+    "classNames": "m-2 float-left col-4"
+  },
+  "companyName":{
+    "classNames": "m-2 float-left col-4"
+  },
+  "RegisteredName":{
+    "classNames": "m-2 float-left col-4"
+  },
+  "Globalclientcode":{
+    "classNames": "m-2 float-left col-4"
+  },
+  "country":{
+    "classNames": "m-2 float-left col-4"
+  },
+  "CorporateEmail":{
+    "classNames": "m-2 float-left col-4"
+  },
+  "CorporatePhone":{
+    "classNames": "m-2 float-left col-4"
+  },
+  "companylogo": {
+    "classNames": "m-2 float-left col-3"
+  },
+  "Registeredadd" : {
+    "classNames": "m-3 float-left inputbox"
+  },
+  "Registeredadd_1" : {
+    "classNames": "m-3 float-left inputbox"
+  },
+  "Zip" : {
+    "classNames": "m-2 float-left col-4"
+  },
+  "city" : {
+    "classNames": "m-2 float-left col-4"
+  },
+  "OfficialEmail" : {
+    "classNames": "m-2 float-left col-4"
+  },
+  "OfficeTel" : {
+    "classNames": "m-2 float-left col-4"
+  },
+  "RegisteredAddress" : {
+    "classNames": "m-2 float-left col-lg-9",
+    "ui:option" : {
+      "label": "Add new address"}
+  }
+}
