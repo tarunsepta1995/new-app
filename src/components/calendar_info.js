@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 
-//modifiede
+//modified
 
 export default class CalendarInfo extends Component {
     render(){
