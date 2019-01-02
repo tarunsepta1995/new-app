@@ -9,11 +9,14 @@
     "react": "^16.7.0",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.7.0",
+    "react-json-parser": "^0.2.1",
     "react-jsonschema-form": "^1.0.6",
     "react-jsonschema-form-pagination": "^0.4.0",
+    "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1",
-    "reactstrap": "^6.5.0"
+    "react-scripts": "^2.1.2",
+    "reactstrap": "^6.5.0",
+    "redux": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

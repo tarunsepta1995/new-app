@@ -5,6 +5,7 @@ import EmployeeMasterIdentification from '../components/EmployeeMasterIdentifica
 import EmployeeMasterOffice from '../components/EmployeeMasterOffice';
 import { Nav, NavItem, NavLink, TabContent,TabPane} from "reactstrap";
 import classnames from "classnames";
+import parsor from 'react-json-parsenpmar'
 
 export default class EmployeeMaster extends Component{
     constructor(props){

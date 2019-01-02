@@ -4,9 +4,17 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-import EmplMast from './components/EmployeeMasterNew'
+import EmplMast from './components/EmployeeMasterNew';
+import {createStore} from "redux";
+import {Provider} from "react-redux";
+import EmployeeMasterReducer from "./Reducers/EmployeeMasterReducer";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+<Provider store = {createStore(EmployeeMasterReducer)}>
+<App />
+</Provider>
+,
+document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

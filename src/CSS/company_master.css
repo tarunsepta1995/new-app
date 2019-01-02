@@ -1,6 +1,6 @@
 
 :root{
-    --topPosition : 10%;
+    --topPosition : 5%;
 }
 .col-md-12{
     padding: 0;
@@ -47,12 +47,12 @@
 
 .bank{
     margin-left: 25%;
-    margin-top: calc(var(--topPosition) - 6%);
+    margin-top: calc(var(--topPosition));
 }
 
 .iden{
     margin-left: 12.5%;
-    margin-top: calc(var(--topPosition) - 6%);
+    margin-top: calc(var(--topPosition));
 }
 .submitButton{
     position:fixed;

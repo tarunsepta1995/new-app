@@ -94,7 +94,7 @@ export default class EmployeeMasterNew extends Component{
         if ((this.state.submitStatus === '') || (this.state.submitStatus === 'cancel')) {
             return (
                 <div>
-                    <NewForm onSubmit={this.onSubmit} schema={EmployeeMasterSchema} uiSchema={UIschema}>
+                    <NewForm onSubmit={this.onSubmit} schema={this.props.EmployeeSchema} uiSchema={UIschema}>
                         <button type='submit' className='btn btn-outline-primary submitButton'>Submit</button>
                         <button type='reset' className='btn btn-outline-danger cancelButton' onClick={this.onReset}>Cancel</button>
                     </NewForm>
