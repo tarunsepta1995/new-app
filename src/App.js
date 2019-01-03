@@ -1,9 +1,5 @@
-
-/*import logo from './logo.svg';*/
-import './App.css';
-import EmployeeMaster from './components/EmployeeMaster'
-import {connect} from "react-redux"
-//import './CSS/company_master.css'
+import EmployeeMasterRoute from './Routes/EmployeeMasterRoute';
+import {connect} from "react-redux";
 
 function mapStateToProps(state){
 return{
@@ -11,6 +7,6 @@ return{
        }
 }
 
-export default connect(mapStateToProps)(EmployeeMaster)
+export default connect(mapStateToProps)(EmployeeMasterRoute)
 
 

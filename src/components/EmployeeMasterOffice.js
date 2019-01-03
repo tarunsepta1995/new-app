@@ -1,14 +1,21 @@
 import React,{Component} from 'react';
 import Form from 'react-jsonschema-form';
-import EmployeeMaster from '../Schema/employee_master';
-import parser from 'json-schema-parser';
 
-const UiSchema = {}
+
+const UiSchema = {"classNames" : "NewClass"}
 export default class EmployeeMasterOffice extends Component{
+    constructor(){
+               super()
+               this.onSubmit = this.onSubmit.bind(this)
+        }
+
+        onSubmit(formData){
+                console.log(formData.formData)
+        }
     render() {
         return(
             <div>
-                <Form schema={this.props.employeeMasterSchema} uiSchema={UiSchema} />
+                <Form onSubmit = {this.onSubmit} schema={this.props.employeeMasterSchema} uiSchema={UiSchema} />
             </div>
         )
     }

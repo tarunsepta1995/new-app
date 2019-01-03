@@ -1,10 +1,11 @@
 import React,{Component} from 'react';
-import EmployeeMaster from '../Schema/employee_master';
 import Form from 'react-jsonschema-form';
-
-const UiSchema = { }
-
-
+const UiSchema = {
+                      "classNames" : "NewClass",
+                           "ui:order" :["id","Title","EmployeeFirstName","EmployeeMiddleName","EmployeeLastName","EmployeeSurrName","EmployeeDOB"
+                                           ,"EmployeeDOC","EmployeeDOJ","EmployeeNationalLanguage","EmployeeBloodGroup"
+                           ]
+}
 export default class EmployeePersonalDetails extends Component{
     constructor(){
            super()
